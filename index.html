@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ваши отзывы - Главная</title>
+	<meta property="og:title" content="Ваши отзывы - Главная">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="Ваши отзывы - Главная">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="header__top">
+				<div class="container">
+					<div class="header__wrapper">
+						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
+						<a href="index.html" class="header__logotype">
+							<picture>
+								<source srcset="img/logotype.svg" media="(min-width: 768px)">
+								<img src="img/logotype-sm.svg" width="189" height="48" alt="Ваши отзывы">
+							</picture>
+							<span>Отзывы о компаниях каждый день!</span>
+						</a>
+						<div class="input-field header__search header__search--top">
+							<div class="input-field__inner">
+								<button class="input-field__btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-search"></use>
+									</svg>
+								</button>
+								<input type="text" class="input-field__input" placeholder="Поиск компаний...">
+							</div>
+						</div>
+						<a href="#" class="header__btn btn btn--light">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-chat-plus"></use>
+							</svg>
+							<span>Оставить отзыв</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__main">
+				<div class="container">
+					<div class="header__wrapper">
+						<div class="header__group">
+							<a href="companies.html" class="header__btn btn">
+								<svg>
+									<use xlink:href="img/sprite.svg#icon-catalog"></use>
+								</svg>
+								<span>Каталог компаний</span>
+							</a>
+							<ul class="header__list">
+								<li class="header__list-item">
+									<a href="#" class="header__link">Рейтинг</a>
+								</li>
+								<li class="header__list-item">
+									<a href="#" class="header__link">Правила сайта</a>
+								</li>
+							</ul>
+						</div>
+						<div class="header__group">
+							<div class="c-stats header__stats">
+								<div class="c-stats__list">
+									<a href="#" class="c-stats__item">
+										<span class="c-stats__value">163</span>
+										<span class="c-stats__help">компании</span>
+									</a>
+									<a href="#" class="c-stats__item">
+										<span class="c-stats__value c-stats__value--orange">12853</span>
+										<span class="c-stats__help">отзыва</span>
+									</a>
+								</div>
+							</div>
+							<div class="c-socnav c-socnav--dark header__socnav">
+								<ul class="c-socnav__list">
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link">
+											<svg class="c-socnav__icon">
+												<use xlink:href="img/sprite.svg#icon-vk"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="c-socnav__item">
+										<a href="#" class="c-socnav__link">
+											<svg class="c-socnav__icon">
+												<use xlink:href="img/sprite.svg#icon-fb"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="input-field header__search header__search--main">
+								<div class="input-field__inner">
+									<button class="input-field__btn">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-search"></use>
+										</svg>
+									</button>
+									<input type="text" class="input-field__input" placeholder="Поиск">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- end of header -->
+		<!-- content -->
+		<div class="wrapper__content">
+			<!-- main -->
+			<section class="main" id="main">
+				<div class="container">
+					<div class="main__wrapper">
+						<div class="main__body">
+							<h1 class="main__heading">Расскажи все, что знаешь о&nbsp;компании</h1>
+							<p class="main__description">
+								Если Ваши права были ущемлены, то всегда можно оставить отзыв о работодателе на нашем сайте. Предупредите соискателей о том, что их ждет, если они поступят <br>
+								на работу в компанию, которая ведет свою деятельность с нарушениями законодательства.
+								<br><br>
+								Расскажите о Вашем опыте работы в компании, о коллегах и руководстве <br>
+								или читайте отзывы об интересующих Вас работодателях!
+							</p>
+						</div>
+						<picture class="main__img">
+							<img src="img/main-img.png" alt="Image">
+						</picture>
+					</div>
+				</div>
+			</section>
+			<!-- end of main -->
+			<!-- categories -->
+			<section class="categories section-indent-sm" id="categories">
+				<div class="container">
+					<div class="section-heading section-heading--sm">
+						<h2 class="section-heading__subtitle">Популярные категории</h2>
+					</div>
+					<div class="categories__slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="#" class="categories__item">
+										<picture class="categories__icon">
+											<img src="img/categories-01.svg" alt="Icon">
+										</picture>
+										<span class="categories__name">
+											<span>Автомобили</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-go"></use>
+											</svg>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="categories__item">
+										<picture class="categories__icon">
+											<img src="img/categories-02.svg" alt="Icon">
+										</picture>
+										<span class="categories__name">
+											<span>Медицина</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-go"></use>
+											</svg>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="categories__item">
+										<picture class="categories__icon">
+											<img src="img/categories-03.svg" alt="Icon">
+										</picture>
+										<span class="categories__name">
+											<span>Строительство</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-go"></use>
+											</svg>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="categories__item">
+										<picture class="categories__icon">
+											<img src="img/categories-04.svg" alt="Icon">
+										</picture>
+										<span class="categories__name">
+											<span>Интернет</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-go"></use>
+											</svg>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="categories__item">
+										<picture class="categories__icon">
+											<img src="img/categories-05.svg" alt="Icon">
+										</picture>
+										<span class="categories__name">
+											<span>Недвижимость</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-go"></use>
+											</svg>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="categories__item">
+										<picture class="categories__icon">
+											<img src="img/categories-06.svg" alt="Icon">
+										</picture>
+										<span class="categories__name">
+											<span>Финансы</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-go"></use>
+											</svg>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="categories__item">
+										<picture class="categories__icon">
+											<img src="img/categories-07.svg" alt="Icon">
+										</picture>
+										<span class="categories__name">
+											<span>Мебель</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-go"></use>
+											</svg>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="categories__item">
+										<picture class="categories__icon">
+											<img src="img/categories-08.svg" alt="Icon">
+										</picture>
+										<span class="categories__name">
+											<span>Одежда и обувь</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-go"></use>
+											</svg>
+										</span>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="#" class="categories__item">
+										<picture class="categories__icon">
+											<img src="img/categories-09.svg" alt="Icon">
+										</picture>
+										<span class="categories__name">
+											<span>Электроника</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-go"></use>
+											</svg>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of categories -->
+			<!-- popular companies -->
+			<section class="popular-companies section-indent" id="popular-companies">
+				<div class="container">
+					<div class="section-heading section-heading--center">
+						<h2 class="section-heading__title">Часто обсуждаемые компании</h2>
+					</div>
+					<div class="popular-companies__wrapper">
+						<article class="popular-companies__item"></article>
+					</div>
+				</div>
+			</section>
+			<!-- end of popular companies -->
+			<!-- cities -->
+			<section class="cities section-indent" id="cities">
+				<div class="container">
+					<div class="section-heading section-heading--center">
+						<h2 class="section-heading__title">Отзывы о компаниях по городам</h2>
+					</div>
+					<div class="cities__wrap">
+						<div class="cities__wrapper">
+							<div class="cities__item">
+								<a href="#" class="cities__link">Владивосток</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Казань</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Москва</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Рязань</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Тюмень</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Владимир</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Калининград</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Нижний Новгород</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Самара</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Уфа</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Воронеж</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Калуга</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Новосибирск</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Санкт-Петербург</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Хабаровск</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Екатеринбург</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Краснодар</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Пермь</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Тверь</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Челябинск</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Иркутск</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Красноярск</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Ростов-на-Дону</a>
+							</div>
+							<div class="cities__item">
+								<a href="#" class="cities__link">Тула</a>
+							</div>
+						</div>
+						<a href="#" class="cities__more">
+							<span>Полный список городов</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-arrow-go"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- end of cities -->
+		</div>
+		<!-- end of content -->
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__main">
+					<div class="footer__group">
+						<a href="index.html" class="footer__logotype">
+							<img src="img/logotype-white.svg" alt="Ваши отзывы">
+						</a>
+						<ul class="footer__list">
+							<li class="footer__list-item">
+								<a href="#" class="footer__link">Рейтинг</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__link">Правила</a>
+							</li>
+							<li class="footer__list-item">
+								<a href="#" class="footer__link">Связаться с нами</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__group">
+						<div class="c-socnav footer__socnav">
+							<ul class="c-socnav__list">
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<svg class="c-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-vk"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="c-socnav__item">
+									<a href="#" class="c-socnav__link">
+										<svg class="c-socnav__icon">
+											<use xlink:href="img/sprite.svg#icon-fb"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<a href="#" class="footer__btn btn btn--white">
+							<svg>
+								<use xlink:href="img/sprite.svg#icon-chat-plus"></use>
+							</svg>
+							<span>Добавить компанию</span>
+						</a>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<p class="footer__copyright">© Ваши отзывы - сайт отзывов о работодателях.</p>
+					<p class="footer__copyright"><a href="#">Политика конфиденциальности</a></p>
+				</div>
+			</div>
+		</footer>
+		<!-- end of footer -->
+	</div>
+	<!-- end of wrapper -->
+	<!-- scripts -->
+	<script src="js/vendor.min.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
