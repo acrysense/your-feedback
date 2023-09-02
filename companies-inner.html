@@ -42,7 +42,7 @@
 										<use xlink:href="img/sprite.svg#icon-search"></use>
 									</svg>
 								</button>
-								<input type="text" class="input-field__input" placeholder="Поиск компаний...">
+								<input type="text" id="header-search" class="input-field__input" placeholder="Поиск компаний...">
 							</div>
 						</div>
 						<a href="#" class="header__btn btn btn--light">
@@ -111,7 +111,7 @@
 											<use xlink:href="img/sprite.svg#icon-search"></use>
 										</svg>
 									</button>
-									<input type="text" class="input-field__input" placeholder="Поиск">
+									<input type="text" id="header-search-mobile" class="input-field__input" placeholder="Поиск">
 								</div>
 							</div>
 						</div>
@@ -122,6 +122,497 @@
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
+			<!-- companies inner -->
+			<section class="companies-inner" id="companies-inner">
+				<div class="container">
+					<div class="companies-inner__wrap">
+						<div class="companies-inner__left">
+							<div class="companies-inner__wrapper">
+								<div class="companies-inner__info">
+									<picture class="companies-inner__img">
+										<img src="img/companies-04.png" alt="Image">
+									</picture>
+									<span class="companies-inner__text">Компания просмотрена: 71721 раз</span>
+								</div>
+								<div class="companies-inner__body">
+									<h2 class="companies-inner__heading">Автофрамос Рено</h2>
+									<p class="companies-inner__description">В настоящее время Renault является одной из самых популярных и продаваемых автомобильных марок в России. В 2014 году дилерская сеть Renault стала крупнейшей среди иностранных брендов: свыше 180 автосалонов от Калининграда до Владивостока. Автомобили Renault доказали свою надежность в непростых климатических и дорожных условиях России и по праву заслужили звание народной марки.</p>
+								</div>
+							</div>
+							<div class="companies-inner__block companies-inner__block--mobile">
+								<h3 class="companies-inner__subtitle">Рейтинг компании:</h3>
+								<div class="companies-inner__inner">
+									<a href="#" class="c-rating c-rating--md --four companies-inner__rating">
+										<div class="c-rating__wrapper">
+											<div class="c-rating__inner">
+												<svg class="c-rating__icon">
+													<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+												</svg>
+												<svg class="c-rating__icon">
+													<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+												</svg>
+												<svg class="c-rating__icon">
+													<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+												</svg>
+												<svg class="c-rating__icon">
+													<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+												</svg>
+												<svg class="c-rating__icon">
+													<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+												</svg>
+											</div>
+											<span class="c-rating__value">4.5</span>
+											<span class="c-rating__help">(1523)</span>
+										</div>
+									</a>
+								</div>
+								<div class="companies-inner__activity">
+									<span class="companies-inner__help">Сфера деятельности:</span>
+									<ul class="companies-inner__activity-list">
+										<li class="companies-inner__activity-item">
+											<span class="companies-inner__activity-elem">Оптовая и розничная торговля</span>
+										</li>
+										<li class="companies-inner__activity-item">
+											<span class="companies-inner__activity-elem">Автомобили и запчасти</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="companies-inner__section">
+								<h3 class="companies-inner__title">Отзывы о компании</h3>
+								<div class="company-reviews companies-inner__reviews">
+									<div class="company-reviews__filter">
+										<div class="company-reviews__filter-group">
+											<div class="filter-select company-reviews__select">
+												<select class="js-select" id="leave-feedback-city">
+													<option data-placeholder="true">Город</option>
+													<option value="1">Москва</option>
+													<option value="2">Санкт-Петербург</option>
+													<option value="3">Екатеринбург</option>
+													<option value="4">Краснодар</option>
+													<option value="5">Пермь</option>
+												</select>
+											</div>
+											<div class="filter-select company-reviews__select">
+												<select class="js-select" id="leave-feedback-city">
+													<option data-placeholder="true">Должность</option>
+													<option value="1">Должность 1</option>
+													<option value="2">Должность 2</option>
+													<option value="3">Должность 3</option>
+													<option value="4">Должность 4</option>
+												</select>
+											</div>
+										</div>
+										<div class="company-reviews__filter-group">
+											<span class="company-reviews__filter-label">Сортировать:</span>
+											<div class="filter-select company-reviews__select">
+												<select class="js-select" id="leave-feedback-city">
+													<option data-placeholder="true">По дате</option>
+													<option value="1">По дате 1</option>
+													<option value="2">По дате 2</option>
+												</select>
+											</div>
+											<div class="filter-select company-reviews__select">
+												<select class="js-select" id="leave-feedback-city">
+													<option data-placeholder="true">По рейтингу</option>
+													<option value="1">Рейтинг 1</option>
+													<option value="2">Рейтинг 2</option>
+													<option value="3">Рейтинг 3</option>
+													<option value="4">Рейтинг 4</option>
+													<option value="5">Рейтинг 5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="company-reviews__wrapper">
+										<article class="company-reviews__item">
+											<div class="company-reviews__top">
+												<div class="company-reviews__info">
+													<picture class="company-reviews__img">
+														<img src="img/ava-plug.svg" alt="Image">
+													</picture>
+													<div class="company-reviews__group">
+														<h3 class="company-reviews__name">Алексей (Клиент)</h3>
+														<span class="company-reviews__help">11:36 10.02.2022</span>
+													</div>
+												</div>
+												<a href="#" class="c-rating --four company-reviews__rating">
+													<div class="c-rating__wrapper">
+														<div class="c-rating__inner">
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+														</div>
+														<span class="c-rating__value">4.5</span>
+													</div>
+												</a>
+											</div>
+											<div class="company-reviews__main">
+												<div class="company-reviews__block">
+													<h3 class="company-reviews__subtitle">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-like"></use>
+														</svg>
+														<span>Положительные стороны</span>
+													</h3>
+													<p class="company-reviews__description">Работаю в компании с 2013 года, отличная компания, дружный коллектив. На работу хочется приходить и не хочется уходить домой. Своевременная, достойная и официальная заработная плата. Карьерный рост, постоянное развитие. Мороженное в холодильнике не заканчивается, кофе всегда свежий, а что еще надо для работы?) ТЛК-Групп - моя любимая семья.</p>
+												</div>
+												<div class="company-reviews__block">
+													<h3 class="company-reviews__subtitle">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-dislike"></use>
+														</svg>
+														<span>Отрицательные стороны</span>
+													</h3>
+													<p class="company-reviews__description">Хотелось бы, чтоб руководство рассмотрело варианты улучшения мотивации для сотрудников по результатам работы и времени работы сотрудника в компании. Можно добавить медицинское страхование и компенсацию питания для сотрудников.</p>
+												</div>
+												<a href="#" class="company-reviews__link">
+													<span>Ответить</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-caret"></use>
+													</svg>
+												</a>
+											</div>
+										</article>
+										<article class="company-reviews__item">
+											<div class="company-reviews__top">
+												<div class="company-reviews__info">
+													<picture class="company-reviews__img">
+														<img src="img/ava-plug.svg" alt="Image">
+													</picture>
+													<div class="company-reviews__group">
+														<h3 class="company-reviews__name">Алексей (Клиент)</h3>
+														<span class="company-reviews__help">11:36 10.02.2022</span>
+													</div>
+												</div>
+												<a href="#" class="c-rating --four company-reviews__rating">
+													<div class="c-rating__wrapper">
+														<div class="c-rating__inner">
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+														</div>
+														<span class="c-rating__value">4.5</span>
+													</div>
+												</a>
+											</div>
+											<div class="company-reviews__main">
+												<div class="company-reviews__block">
+													<h3 class="company-reviews__subtitle">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-like"></use>
+														</svg>
+														<span>Положительные стороны</span>
+													</h3>
+													<p class="company-reviews__description">Работаю в компании с 2013 года, отличная компания, дружный коллектив. На работу хочется приходить и не хочется уходить домой. Своевременная, достойная и официальная заработная плата. Карьерный рост, постоянное развитие. Мороженное в холодильнике не заканчивается, кофе всегда свежий, а что еще надо для работы?) ТЛК-Групп - моя любимая семья.</p>
+												</div>
+												<div class="company-reviews__block">
+													<h3 class="company-reviews__subtitle">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-dislike"></use>
+														</svg>
+														<span>Отрицательные стороны</span>
+													</h3>
+													<p class="company-reviews__description">Хотелось бы, чтоб руководство рассмотрело варианты улучшения мотивации для сотрудников по результатам работы и времени работы сотрудника в компании. Можно добавить медицинское страхование и компенсацию питания для сотрудников.</p>
+												</div>
+												<a href="#" class="company-reviews__link">
+													<span>Посмотреть ответы (3)</span>
+												</a>
+											</div>
+										</article>
+										<article class="company-reviews__item">
+											<div class="company-reviews__top">
+												<div class="company-reviews__info">
+													<picture class="company-reviews__img">
+														<img src="img/ava-plug.svg" alt="Image">
+													</picture>
+													<div class="company-reviews__group">
+														<h3 class="company-reviews__name">Алексей (Клиент)</h3>
+														<span class="company-reviews__help">11:36 10.02.2022</span>
+													</div>
+												</div>
+												<a href="#" class="c-rating --four company-reviews__rating">
+													<div class="c-rating__wrapper">
+														<div class="c-rating__inner">
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+															<svg class="c-rating__icon">
+																<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+															</svg>
+														</div>
+														<span class="c-rating__value">4.5</span>
+													</div>
+												</a>
+											</div>
+											<div class="company-reviews__main">
+												<div class="company-reviews__block">
+													<h3 class="company-reviews__subtitle">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-like"></use>
+														</svg>
+														<span>Положительные стороны</span>
+													</h3>
+													<p class="company-reviews__description">Работаю в компании с 2013 года, отличная компания, дружный коллектив. На работу хочется приходить и не хочется уходить домой. Своевременная, достойная и официальная заработная плата. Карьерный рост, постоянное развитие. Мороженное в холодильнике не заканчивается, кофе всегда свежий, а что еще надо для работы?) ТЛК-Групп - моя любимая семья.</p>
+												</div>
+												<div class="company-reviews__block">
+													<h3 class="company-reviews__subtitle">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-dislike"></use>
+														</svg>
+														<span>Отрицательные стороны</span>
+													</h3>
+													<p class="company-reviews__description">Хотелось бы, чтоб руководство рассмотрело варианты улучшения мотивации для сотрудников по результатам работы и времени работы сотрудника в компании. Можно добавить медицинское страхование и компенсацию питания для сотрудников.</p>
+												</div>
+												<a href="#" class="company-reviews__link">
+													<span>Ответить</span>
+													<svg>
+														<use xlink:href="img/sprite.svg#icon-caret"></use>
+													</svg>
+												</a>
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+							<div class="companies-inner__section">
+								<h3 class="companies-inner__title">Написать отзыв про <span>Автофрамос Рено</span> <span>(23)</span></h3>
+								<div class="leave-feedback companies-inner__feedback">
+									<form action="#" class="leave-feedback__form">
+										<div class="leave-feedback__inner">
+											<div class="input-field leave-feedback__input">
+												<label for="leave-feedback-name" class="input-field__label">Имя <span>*</span></label>
+												<div class="input-field__inner">
+													<input type="text" id="leave-feedback-name" class="input-field__input" placeholder="Ваше имя">
+												</div>
+											</div>
+											<div class="input-field leave-feedback__input">
+												<label for="leave-feedback-person" class="input-field__label">Кто Вы <span>*</span></label>
+												<div class="default-select input-field__inner">
+													<select class="js-select" id="leave-feedback-person">
+														<option data-placeholder="true">Выберите из списка</option>
+														<option value="1">Значение 1</option>
+														<option value="3">Значение 2</option>
+														<option value="4">Значение 3</option>
+														<option value="5">Значение 4</option>
+													</select>
+												</div>
+											</div>
+											<div class="input-field leave-feedback__input">
+												<label for="leave-feedback-rating" class="input-field__label">Общее впечатление <span>*</span></label>
+												<div class="default-select input-field__inner">
+													<select class="js-select" id="leave-feedback-rating">
+														<option data-placeholder="true">Общее впечатление</option>
+														<option value="1">Рекомендую</option>
+														<option value="2">Не рекомендую</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="leave-feedback__inner">
+											<div class="input-field leave-feedback__textarea">
+												<label for="leave-feedback-advantages" class="input-field__label">Достоинства <span>*</span></label>
+												<div class="input-field__inner">
+													<textarea id="leave-feedback-advantages" class="input-field__textarea" placeholder="Напишите достоинства"></textarea>
+												</div>
+											</div>
+										</div>
+										<div class="leave-feedback__inner">
+											<div class="input-field leave-feedback__textarea">
+												<label for="leave-feedback-flaws" class="input-field__label">Недостатки <span>*</span></label>
+												<div class="input-field__inner">
+													<textarea id="leave-feedback-flaws" class="input-field__textarea" placeholder="Напишите недостатки"></textarea>
+												</div>
+											</div>
+										</div>
+										<div class="leave-feedback__inner">
+											<div class="input-field leave-feedback__input">
+												<label for="leave-feedback-city" class="input-field__label">Город <span>*</span></label>
+												<div class="default-select input-field__inner">
+													<select class="js-select" id="leave-feedback-city">
+														<option data-placeholder="true">Выберите город</option>
+														<option value="1">Москва</option>
+														<option value="2">Санкт-Петербург</option>
+														<option value="3">Екатеринбург</option>
+														<option value="4">Краснодар</option>
+														<option value="5">Пермь</option>
+													</select>
+												</div>
+											</div>
+											<div class="input-field leave-feedback__input">
+												<label for="leave-feedback-email" class="input-field__label">E-mail <span>*</span></label>
+												<div class="input-field__inner">
+													<input type="email" id="leave-feedback-email" class="input-field__input" placeholder="Введите e-mail">
+												</div>
+											</div>
+										</div>
+										<label for="leave-feedback-policy" class="square-checkbox leave-feedback__checkbox">
+											<input type="checkbox" id="leave-feedback-policy" class="square-checkbox__input">
+											<div class="square-checkbox__group">
+												<div class="square-checkbox__icon"></div>
+												<div class="square-checkbox__label">
+													<span class="square-checkbox__title">Согласен на обработку <a href="#">персональных данных</a></span>
+												</div>
+											</div>
+										</label>
+										<button class="leave-feedback__btn btn">Отправить отзыв</button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="companies-inner__right">
+							<div class="companies-inner__block companies-inner__block--desktop">
+								<h3 class="companies-inner__subtitle">Рейтинг компании:</h3>
+								<div class="companies-inner__inner">
+									<a href="#" class="c-rating c-rating--md --four companies-inner__rating">
+										<div class="c-rating__wrapper">
+											<div class="c-rating__inner">
+												<svg class="c-rating__icon">
+													<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+												</svg>
+												<svg class="c-rating__icon">
+													<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+												</svg>
+												<svg class="c-rating__icon">
+													<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+												</svg>
+												<svg class="c-rating__icon">
+													<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+												</svg>
+												<svg class="c-rating__icon">
+													<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+												</svg>
+											</div>
+											<span class="c-rating__value">4.5</span>
+											<span class="c-rating__help">(1523)</span>
+										</div>
+									</a>
+								</div>
+								<div class="companies-inner__activity">
+									<span class="companies-inner__help">Сфера деятельности:</span>
+									<ul class="companies-inner__activity-list">
+										<li class="companies-inner__activity-item">
+											<span class="companies-inner__activity-elem">Оптовая и розничная торговля</span>
+										</li>
+										<li class="companies-inner__activity-item">
+											<span class="companies-inner__activity-elem">Автомобили и запчасти</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="companies-inner__block">
+								<h3 class="companies-inner__subtitle">Похожие компании</h3>
+								<div class="similar-companies companies-inner__similar-companies">
+									<div class="similar-companies__wrapper">
+										<a href="#" class="similar-companies__item">
+											<picture class="similar-companies__img">
+												<img src="img/companies-01.jpg" alt="Image">
+											</picture>
+											<div class="similar-companies__body">
+												<span class="similar-companies__name">Active Sale Group</span>
+												<div class="similar-companies__inner">
+													<div class="similar-companies__rating">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+														</svg>
+														<span>4.5</span>
+													</div>
+													<span class="similar-companies__help">152 отзывов</span>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="similar-companies__item">
+											<picture class="similar-companies__img">
+												<img src="img/companies-03.jpg" alt="Image">
+											</picture>
+											<div class="similar-companies__body">
+												<span class="similar-companies__name">Автоаукцион АйАвто</span>
+												<div class="similar-companies__inner">
+													<div class="similar-companies__rating">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+														</svg>
+														<span>4.5</span>
+													</div>
+													<span class="similar-companies__help">152 отзывов</span>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="similar-companies__item">
+											<picture class="similar-companies__img">
+												<img src="img/companies-05.png" alt="Image">
+											</picture>
+											<div class="similar-companies__body">
+												<span class="similar-companies__name">АвтоСпецЦентр</span>
+												<div class="similar-companies__inner">
+													<div class="similar-companies__rating">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+														</svg>
+														<span>4.5</span>
+													</div>
+													<span class="similar-companies__help">152 отзывов</span>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="similar-companies__item">
+											<picture class="similar-companies__img">
+												<img src="img/companies-02.jpg" alt="Image">
+											</picture>
+											<div class="similar-companies__body">
+												<span class="similar-companies__name">AGA автомаг</span>
+												<div class="similar-companies__inner">
+													<div class="similar-companies__rating">
+														<svg>
+															<use xlink:href="img/sprite.svg#icon-star-filled"></use>
+														</svg>
+														<span>4.5</span>
+													</div>
+													<span class="similar-companies__help">152 отзывов</span>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end of companies inner -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
